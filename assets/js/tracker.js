@@ -5,6 +5,9 @@ const log = document.querySelector("[data-tracker-log]");
 const primaryPicker = document.querySelector("[data-primary-picker]");
 const primaryOptions = document.querySelector("[data-primary-options]");
 const primaryCards = window.KILL_TEAM_CARDS.filter((card) => card.cat === "primary");
+const criticalPicker = document.querySelector("[data-critical-picker]");
+const criticalOptions = document.querySelector("[data-critical-options]");
+const criticalCards = window.KILL_TEAM_CARDS.filter((card) => card.cat === "crit");
 const tacticalPicker = document.querySelector("[data-tactical-picker]");
 const tacticalCategories = document.querySelector("[data-tactical-categories]");
 const tacticalCardPicker = document.querySelector("[data-tactical-card-picker]");
@@ -13,12 +16,16 @@ const tacticalOptions = document.querySelector("[data-tactical-options]");
 const tacticalCards = window.KILL_TEAM_CARDS.filter((card) => card.cat === "tac");
 const tacticalCategoryNames = [...new Set(tacticalCards.map((card) => card.archetype))];
 const primaryChooseButton = document.querySelector("[data-action=choose-primary]");
+const criticalChooseButton = document.querySelector("[data-action=choose-critical]");
 const tacticalChooseButton = document.querySelector("[data-action=choose-secondary]");
 const confirmButton = document.querySelector("[data-action=confirm]");
 const revealButton = document.querySelector("[data-action=reveal-tactical]");
 const tacticalReveal = document.querySelector("[data-tactical-reveal]");
 const tacticalRevealCard = document.querySelector("[data-tactical-reveal-card]");
+const criticalReveal = document.querySelector("[data-critical-reveal]");
+const criticalRevealCard = document.querySelector("[data-critical-reveal-card]");
 let viewingSelections = false;
+const backToTopButton = document.querySelector("[data-back-to-top]");
 
 primaryOptions.innerHTML = primaryCards.map((card) => `
   <div class="primary-card-choice" data-primary-id="${card.id}" data-primary-title="${card.title}">
@@ -30,23 +37,42 @@ tacticalCategories.innerHTML = tacticalCategoryNames.map((category) => `
   <button class="tactical-category" type="button" data-tactical-category="${category}">${category}</button>
 `).join("");
 
+criticalOptions.innerHTML = criticalCards.map((card) => `
+  <div class="critical-card-choice" data-critical-id="${card.id}" data-critical-title="${card.title}">
+    ${renderCard(card)}
+  </div>
+`).join("");
+
 function saveTrackerState() {
   localStorage.setItem(TRACKER_STORAGE_KEY, JSON.stringify(trackerState));
 }
 
 function updateTrackerStatus() {
   const selections = [
+    trackerState.criticalTask && `关键行动 · ${trackerState.criticalTask.title}`,
     trackerState.primaryTask && `主要任务 · ${trackerState.primaryTask.title}`,
     trackerState.tacticalTask && `战术行动 · ${trackerState.tacticalTask.title}`,
   ].filter(Boolean);
   primaryChooseButton.classList.toggle("is-selected", Boolean(trackerState.primaryTask));
+  criticalChooseButton.classList.toggle("is-selected", Boolean(trackerState.criticalTask));
   tacticalChooseButton.classList.toggle("is-selected", Boolean(trackerState.tacticalTask));
   primaryChooseButton.setAttribute("aria-pressed", Boolean(trackerState.primaryTask));
+  criticalChooseButton.setAttribute("aria-pressed", Boolean(trackerState.criticalTask));
   tacticalChooseButton.setAttribute("aria-pressed", Boolean(trackerState.tacticalTask));
   const canReveal = Boolean(trackerState.lockedAt && trackerState.tacticalTask);
   revealButton.disabled = !canReveal;
   revealButton.textContent = trackerState.tacticalRevealed ? "已触发揭示" : "触发揭示";
   revealButton.classList.toggle("primary", Boolean(trackerState.tacticalRevealed));
+  if (trackerState.lockedAt && trackerState.criticalTask) {
+    const revealedCard = criticalCards.find((card) => card.id === trackerState.criticalTask.id);
+    if (revealedCard) {
+      criticalRevealCard.innerHTML = renderCard(revealedCard);
+      criticalReveal.hidden = false;
+    }
+  } else {
+    criticalRevealCard.innerHTML = "";
+    criticalReveal.hidden = true;
+  }
   if (trackerState.tacticalRevealed && trackerState.tacticalTask) {
     const revealedCard = tacticalCards.find((card) => card.id === trackerState.tacticalTask.id);
     if (revealedCard) {
@@ -82,6 +108,9 @@ function updateTrackerStatus() {
 }
 
 function showLockedSelections() {
+  criticalOptions.querySelectorAll("[data-critical-id]").forEach((cardChoice) => {
+    cardChoice.hidden = cardChoice.dataset.criticalId !== trackerState.criticalTask?.id;
+  });
   primaryOptions.querySelectorAll("[data-primary-id]").forEach((cardChoice) => {
     cardChoice.hidden = cardChoice.dataset.primaryId !== trackerState.primaryTask?.id;
   });
@@ -100,6 +129,9 @@ function showLockedSelections() {
 }
 
 function resetSelectionChoices() {
+  criticalOptions.querySelectorAll("[data-critical-id]").forEach((cardChoice) => {
+    cardChoice.hidden = false;
+  });
   primaryOptions.querySelectorAll("[data-primary-id]").forEach((cardChoice) => {
     cardChoice.hidden = false;
   });
@@ -111,6 +143,7 @@ function resetSelectionChoices() {
 function hideSelectionPickers() {
   viewingSelections = false;
   resetSelectionChoices();
+  criticalPicker.hidden = true;
   primaryPicker.hidden = true;
   tacticalPicker.hidden = true;
 }
@@ -118,12 +151,22 @@ function hideSelectionPickers() {
 function showPrimaryPicker() {
   if (trackerState.lockedAt) return;
   primaryPicker.hidden = false;
+  criticalPicker.hidden = true;
   tacticalPicker.hidden = true;
   primaryPicker.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
+function showCriticalPicker() {
+  if (trackerState.lockedAt) return;
+  criticalPicker.hidden = false;
+  primaryPicker.hidden = true;
+  tacticalPicker.hidden = true;
+  criticalPicker.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
 function showTacticalPicker() {
   if (trackerState.lockedAt) return;
+  criticalPicker.hidden = true;
   primaryPicker.hidden = true;
   tacticalPicker.hidden = false;
   tacticalCardPicker.hidden = true;
@@ -131,11 +174,13 @@ function showTacticalPicker() {
 }
 
 document.querySelector("[data-action=choose-primary]").addEventListener("click", showPrimaryPicker);
+document.querySelector("[data-action=choose-critical]").addEventListener("click", showCriticalPicker);
 document.querySelector("[data-action=choose-secondary]").addEventListener("click", showTacticalPicker);
 document.querySelector("[data-action=confirm]").addEventListener("click", () => {
   if (trackerState.lockedAt) {
     viewingSelections = !viewingSelections;
     primaryPicker.hidden = !viewingSelections;
+    criticalPicker.hidden = true;
     tacticalPicker.hidden = !viewingSelections;
     if (viewingSelections) showLockedSelections();
     else resetSelectionChoices();
@@ -146,7 +191,7 @@ document.querySelector("[data-action=confirm]").addEventListener("click", () => 
     return;
   }
 
-  const selections = [trackerState.primaryTask, trackerState.tacticalTask].filter(Boolean);
+  const selections = [trackerState.criticalTask, trackerState.primaryTask, trackerState.tacticalTask].filter(Boolean);
   if (!selections.length) {
     log.textContent = "请先选择任务。";
     return;
@@ -157,6 +202,7 @@ document.querySelector("[data-action=confirm]").addEventListener("click", () => 
   saveTrackerState();
   viewingSelections = false;
   primaryPicker.hidden = true;
+  criticalPicker.hidden = true;
   tacticalPicker.hidden = true;
   updateTrackerStatus();
 });
@@ -172,15 +218,33 @@ document.querySelector("[data-action=clear-selection]").addEventListener("click"
   localStorage.removeItem(TRACKER_STORAGE_KEY);
   localStorage.removeItem("kill-team-first-turn");
   delete trackerState.primaryTask;
+  delete trackerState.criticalTask;
   delete trackerState.tacticalTask;
   delete trackerState.lockedAt;
   delete trackerState.tacticalRevealed;
   viewingSelections = false;
   resetSelectionChoices();
   primaryPicker.hidden = true;
+  criticalPicker.hidden = true;
   tacticalPicker.hidden = true;
   updateTrackerStatus();
   log.textContent = "已清除本机保存的任务选择。";
+});
+
+document.querySelectorAll("[data-critical-id]").forEach((cardChoice) => {
+  cardChoice.addEventListener("click", (event) => {
+    if (trackerState.lockedAt) return;
+    event.preventDefault();
+    event.stopPropagation();
+    trackerState.criticalTask = {
+      id: cardChoice.dataset.criticalId,
+      title: cardChoice.dataset.criticalTitle,
+    };
+    saveTrackerState();
+    criticalPicker.hidden = true;
+    updateTrackerStatus();
+    document.querySelector(".tracker-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+  }, true);
 });
 
 document.querySelectorAll("[data-primary-id]").forEach((cardChoice) => {
@@ -236,6 +300,10 @@ document.querySelectorAll("[data-tactical-category]").forEach((button) => {
 window.addEventListener("pageshow", () => {
   hideSelectionPickers();
   updateTrackerStatus();
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 hideSelectionPickers();
