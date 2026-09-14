@@ -1,5 +1,5 @@
 .tracker-shell {
-  width: min(980px, calc(100% - 2rem));
+  width: min(1160px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 2rem 0 5rem;
 }
@@ -275,7 +275,7 @@
 .tactical-card-choice .card-face { font-size: 0.82em; }
 .tactical-card-choice .card-face-back, .tactical-card-choice > .card-item > .w-full { display: none; }
 .tactical-card-choice::after { content: 'SELECT'; display: block; margin-top: 0.6rem; color: #ffab91; text-align: center; font: 700 12px 'Share Tech Mono', monospace; letter-spacing: 0.08em; }
-@media (max-width: 900px) {
+@media (max-width: 1199px) {
   .tracker-actions, .task-options, .critical-card-grid, .primary-card-grid, .tactical-category-grid, .tactical-card-grid { grid-template-columns: 1fr; }
   .tracker-action { min-height: 54px; }
 }
@@ -288,7 +288,7 @@
   width: 340px;
   max-width: 100%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1199px) {
   .critical-card-grid, .primary-card-grid, .tactical-card-grid {
     grid-template-columns: minmax(0, 340px);
     justify-content: center;
