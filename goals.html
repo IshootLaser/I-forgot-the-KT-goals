@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>杀戮小队 2025 认证行动任务包卡牌全集 (Kill Team Approved Ops 2025)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Noto+Serif+SC:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="min-h-screen pb-20">
+
+  <header class="border-b border-orange-950/60 bg-black/90 backdrop-blur sticky top-0 z-50 shadow-lg shadow-black/40">
+    <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-orange-600 rounded flex items-center justify-center font-warhammer font-black text-black text-xl shadow-lg shadow-orange-600/30">
+          KT
+        </div>
+        <div>
+          <h1 class="text-base sm:text-xl font-warhammer font-bold tracking-wider text-orange-500 flex items-center gap-2">
+            KILL TEAM 认证行动全套卡牌 2025
+            <span class="text-xs bg-red-950/90 border border-red-700/60 text-red-300 font-mono-kt px-2 py-0.5 rounded">WCW 官方卡组</span>
+          </h1>
+          <p class="text-xs sm:text-sm text-neutral-300">高清矢量战术水印 · 单卡导出 · 主要行动(3) · 击杀行动(1) · 关键行动(9) · 战术行动(12) · 先手权卡(4)</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 flex-wrap">
+        <a href="index.html" class="text-xs sm:text-sm border border-neutral-700 hover:border-orange-400 bg-neutral-900 hover:bg-orange-500/10 text-neutral-300 hover:text-orange-300 px-3.5 py-1.5 rounded transition font-mono-kt font-bold" aria-label="返回主页">HOME</a>
+        <a href="tracker.html" class="text-xs sm:text-sm border border-neutral-700 hover:border-orange-400 bg-neutral-900 hover:bg-orange-500/10 text-neutral-300 hover:text-orange-300 px-3.5 py-1.5 rounded transition font-mono-kt font-bold">TRACK GAME</a>
+        <div class="inline-flex rounded-md shadow-sm bg-neutral-900 border border-neutral-800 p-0.5 text-xs sm:text-sm font-mono-kt">
+          <button onclick="filterCategory('all')" class="cat-filter-btn px-3 py-1.5 rounded bg-orange-600 text-white font-bold" data-cat="all">全部 (29)</button>
+          <button onclick="filterCategory('primary')" class="cat-filter-btn px-2.5 py-1.5 rounded hover:text-orange-400 text-neutral-300" data-cat="primary">主要行动 (3)</button>
+          <button onclick="filterCategory('kill')" class="cat-filter-btn px-2.5 py-1.5 rounded hover:text-orange-400 text-neutral-300" data-cat="kill">击杀行动 (1)</button>
+          <button onclick="filterCategory('crit')" class="cat-filter-btn px-2.5 py-1.5 rounded hover:text-orange-400 text-neutral-300" data-cat="crit">关键行动 (9)</button>
+          <button onclick="filterCategory('tac')" class="cat-filter-btn px-2.5 py-1.5 rounded hover:text-orange-400 text-neutral-300" data-cat="tac">战术行动 (12)</button>
+          <button onclick="filterCategory('init')" class="cat-filter-btn px-2.5 py-1.5 rounded hover:text-orange-400 text-neutral-300" data-cat="init">先手权卡 (4)</button>
+        </div>
+        <button onclick="toggleAllCards()" class="text-xs sm:text-sm border border-orange-500/50 hover:border-orange-400 bg-orange-500/10 hover:bg-orange-500/20 text-orange-300 px-3.5 py-1.5 rounded transition flex items-center gap-1.5 shadow-sm font-mono-kt font-bold">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          全部翻转
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+    <div class="bg-neutral-900/90 border border-neutral-800 rounded-lg p-3 text-xs sm:text-sm text-neutral-300 flex flex-wrap items-center justify-between gap-2 shadow-inner">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span><b>防泄密与统一规格：</b>3 张主要行动卡采用完全统一的军规猩红配色与正反面框架，暗置时背面 100% 相同（双骷髅徽记），对手无法窥探出选定的目标。点击卡牌可翻转。</span>
+      </div>
+      <span class="text-neutral-500 font-mono-kt">STANDARD: 3.5 × 5.25 INCH (COMPETITIVE READY)</span>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div id="cardsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
+      <!-- 动态卡牌卡槽 -->
+    </div>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

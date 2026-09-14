@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>先手追踪 · Kill Team Command Deck</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Noto+Serif+SC:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/tracker.css">
+  <link rel="stylesheet" href="assets/css/first-turn.css">
+</head>
+<body class="min-h-screen">
+  <main class="first-turn-shell">
+    <header class="tracker-header">
+      <div class="tracker-brand">
+        <div class="tracker-mark" aria-hidden="true">KT</div>
+        <div>
+          <h1 class="tracker-title">先手追踪</h1>
+          <p class="tracker-kicker">KILL TEAM · INITIATIVE TRACKER</p>
+        </div>
+      </div>
+      <a class="tracker-home" href="tracker.html">返回对战记录</a>
+    </header>
+
+    <section class="tracker-intro">
+      <h2>每回合先手</h2>
+      <p>记录每一轮由谁掌握先手。</p>
+    </section>
+
+    <section class="first-turn-panel" aria-labelledby="first-turn-title">
+      <div class="first-turn-panel-content">
+        <h2 id="first-turn-title" class="first-turn-heading">先手状态</h2>
+        <div class="first-turn-list" data-first-turn-list></div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/first-turn.js"></script>
+</body>
+</html>

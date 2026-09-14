@@ -1,0 +1,159 @@
+    :root {
+      --kt-dark: #0b0d10;
+      --kt-panel: #14171d;
+      --kt-card-bg: #101318;
+      --kt-orange: #ff5722;
+      --kt-gold: #c5a059;
+      --kt-red: #d32f2f;
+      --kt-green: #2e7d32;
+      --kt-blue: #1976d2;
+      --kt-purple: #7b1fa2;
+      --kt-border: #2c323d;
+    }
+    body {
+      background-color: var(--kt-dark);
+      color: #e2e8f0;
+      font-family: 'Noto Serif SC', serif;
+      background-image: 
+        radial-gradient(ellipse at top, rgba(255, 87, 34, 0.08), transparent 70%),
+        radial-gradient(circle at bottom, rgba(15, 23, 42, 0.85), #07090c);
+    }
+    .font-warhammer {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.06em;
+    }
+    .font-mono-kt {
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    .card-scene {
+      perspective: 1200px;
+      -webkit-perspective: 1200px;
+    }
+    .card-body-wrapper {
+      position: relative;
+      width: 336px;
+      height: 504px;
+      transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+    }
+    .card-body-wrapper.is-flipped {
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      -webkit-backface-visibility: hidden !important;
+      backface-visibility: hidden !important;
+      background-color: #10141b !important;
+      box-shadow: 0 16px 36px rgba(0,0,0,0.75), 0 8px 14px rgba(0,0,0,0.5);
+      border: 2px solid #3c4452;
+    }
+
+    .card-face-front {
+      transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      z-index: 2;
+      visibility: visible;
+      transition: visibility 0s linear 0.3s;
+    }
+    .card-body-wrapper.is-flipped .card-face-front {
+      visibility: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .card-face-back {
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      z-index: 1;
+      visibility: hidden;
+      transition: visibility 0s linear 0.3s;
+      background: radial-gradient(circle at center, #171c24 0%, #0c0f14 100%) !important;
+    }
+    .card-body-wrapper.is-flipped .card-face-back {
+      visibility: visible;
+      pointer-events: auto;
+      z-index: 2;
+    }
+
+    .kt-inner-border {
+      position: absolute;
+      inset: 5px;
+      border: 1px solid rgba(197, 160, 89, 0.45);
+      border-radius: 8px;
+      pointer-events: none;
+      z-index: 15;
+    }
+
+    .card-corner-decor {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      z-index: 20;
+      pointer-events: none;
+    }
+    .card-tl { top: 8px; left: 8px; border-top: 2px solid; border-left: 2px solid; }
+    .card-tr { top: 8px; right: 8px; border-top: 2px solid; border-right: 2px solid; }
+    .card-bl { bottom: 8px; left: 8px; border-bottom: 2px solid; border-left: 2px solid; }
+    .card-br { bottom: 8px; right: 8px; border-bottom: 2px solid; border-right: 2px solid; }
+
+    .grimdark-grid {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    }
+
+    .card-watermark {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      opacity: 0.09;
+      transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s ease;
+      transform: scale(0.98);
+    }
+    .card-body-wrapper:hover .card-watermark {
+      opacity: 0.16;
+      transform: scale(1.02);
+    }
+    .watermark-svg {
+      width: 88%;
+      height: 88%;
+      filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.8));
+    }
+
+    /* Fix Tailwind preflight SVG/IMG baseline displacement in html2canvas */
+    img, svg {
+      display: inline-block !important;
+      vertical-align: middle;
+    }
+
+    .dl-btn {
+      background: linear-gradient(180deg, #242a35 0%, #151921 100%);
+      border: 1px solid #3e4756;
+      transition: all 0.2s ease;
+    }
+    .dl-btn:hover {
+      background: linear-gradient(180deg, #ff5722 0%, #d84315 100%);
+      border-color: #ff8a65;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(255, 87, 34, 0.45);
+    }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #0b0d10; }
+    ::-webkit-scrollbar-thumb { background: #252b36; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #ff5722; }

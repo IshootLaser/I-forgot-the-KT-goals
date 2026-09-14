@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Game · Kill Team Command Deck</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Noto+Serif+SC:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/tracker.css">
+</head>
+<body class="min-h-screen">
+  <main class="tracker-shell">
+    <header class="tracker-header">
+      <div class="tracker-brand">
+        <div class="tracker-mark" aria-hidden="true">KT</div>
+        <div>
+          <h1 class="tracker-title">Track Game</h1>
+          <p class="tracker-kicker">KILL TEAM · MATCH STATE</p>
+        </div>
+      </div>
+      <a class="tracker-home" href="index.html">HOME</a>
+    </header>
+
+    <section class="tracker-intro">
+      <h2>对战记录</h2>
+      <p>记录本场行动的任务选择。选择会保存在当前浏览器中，重新打开页面后仍然保留。</p>
+    </section>
+
+    <section class="tracker-panel" aria-labelledby="tracker-panel-title">
+      <div class="tracker-panel-content">
+        <div class="tracker-status">
+          <span id="tracker-panel-title" class="tracker-status-label">CURRENT OBJECTIVE</span>
+          <strong class="tracker-status-value" data-tracker-status>等待选择主要任务</strong>
+        </div>
+
+        <div class="tracker-actions" aria-label="对战控制">
+          <button class="tracker-action" type="button" data-action="choose-primary">选择主要任务</button>
+          <button class="tracker-action" type="button" data-action="choose-secondary">选择战术行动</button>
+          <button class="tracker-action confirm" type="button" data-action="confirm">确认</button>
+          <a class="tracker-action tracker-link-action" href="first-turn.html">先手追踪</a>
+          <button class="tracker-action tracker-clear-action" type="button" data-action="clear-selection">清除选择</button>
+        </div>
+
+        <p class="tracker-log" data-tracker-log role="status">尚未记录主要任务。</p>
+
+        <section class="primary-picker" data-primary-picker hidden aria-labelledby="primary-picker-title">
+          <h3 id="primary-picker-title">秘密任务 · 选择 1 个主要行动</h3>
+          <p>点击一张卡牌进行选择。</p>
+          <div class="primary-card-grid" data-primary-options></div>
+        </section>
+
+        <section class="tactical-picker" data-tactical-picker hidden aria-labelledby="tactical-picker-title">
+          <h3 id="tactical-picker-title">选择战术行动类别</h3>
+          <p>先选择一个类别，再从该类别中选择 1 张战术行动卡。</p>
+          <div class="tactical-category-grid" data-tactical-categories></div>
+          <div class="tactical-card-picker" data-tactical-card-picker hidden>
+            <h3 data-tactical-category-title></h3>
+            <div class="tactical-card-grid" data-tactical-options></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/tracker.js"></script>
+</body>
+</html>
