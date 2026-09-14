@@ -37,6 +37,7 @@
         </div>
 
         <div class="tracker-actions" aria-label="对战控制">
+          <button class="tracker-action reveal-action" type="button" data-action="reveal-tactical" disabled>触发揭示</button>
           <button class="tracker-action" type="button" data-action="choose-primary">选择主要任务</button>
           <button class="tracker-action" type="button" data-action="choose-secondary">选择战术行动</button>
           <button class="tracker-action confirm" type="button" data-action="confirm">确认</button>
@@ -45,6 +46,11 @@
         </div>
 
         <p class="tracker-log" data-tracker-log role="status">尚未记录主要任务。</p>
+
+        <section class="tactical-reveal" data-tactical-reveal hidden aria-labelledby="tactical-reveal-title">
+          <h3 id="tactical-reveal-title">战术行动 · 已揭示</h3>
+          <div class="tactical-reveal-card" data-tactical-reveal-card></div>
+        </section>
 
         <section class="primary-picker" data-primary-picker hidden aria-labelledby="primary-picker-title">
           <h3 id="primary-picker-title">秘密任务 · 选择 1 个主要行动</h3>

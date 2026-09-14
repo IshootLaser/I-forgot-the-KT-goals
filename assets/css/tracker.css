@@ -136,6 +136,9 @@
 .tracker-action.primary { border-color: rgba(255, 87, 34, 0.7); background: linear-gradient(180deg, rgba(255, 87, 34, 0.3), rgba(70, 22, 10, 0.8)); }
 .tracker-action.confirm { border-color: rgba(46, 125, 50, 0.7); }
 .tracker-action.confirm.primary { border-color: rgba(255, 87, 34, 0.7); background: linear-gradient(180deg, rgba(255, 87, 34, 0.3), rgba(70, 22, 10, 0.8)); }
+.tracker-action:disabled { cursor: not-allowed; opacity: 0.45; transform: none; box-shadow: none; }
+.tracker-action.reveal-action { border-color: rgba(197, 160, 89, 0.65); }
+.tracker-action.reveal-action.primary { border-color: rgba(255, 87, 34, 0.7); background: linear-gradient(180deg, rgba(255, 87, 34, 0.3), rgba(70, 22, 10, 0.8)); }
 .tracker-log {
   min-height: 1.5rem;
   margin-top: 1.5rem;
@@ -144,6 +147,14 @@
   line-height: 1.7;
 }
 .tracker-log strong { color: #fb923c; }
+.tactical-reveal[hidden] { display: none; }
+.tactical-reveal { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--kt-border); }
+.tactical-reveal h3 { color: #fbbf24; font: 800 18px 'Cinzel', serif; }
+.tactical-reveal-card { max-width: 340px; margin-top: 1rem; }
+.tactical-reveal-card .card-item, .tactical-reveal-card .card-scene { width: 100%; }
+.tactical-reveal-card .card-body-wrapper { width: 100%; height: auto; aspect-ratio: 2 / 3; pointer-events: none; }
+.tactical-reveal-card .card-face { font-size: 0.82em; }
+.tactical-reveal-card .card-face-back, .tactical-reveal-card > .card-item > .w-full { display: none; }
 .task-picker[hidden] { display: none; }
 .task-picker {
   margin-top: 1.5rem;

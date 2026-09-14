@@ -15,6 +15,9 @@ const tacticalCategoryNames = [...new Set(tacticalCards.map((card) => card.arche
 const primaryChooseButton = document.querySelector("[data-action=choose-primary]");
 const tacticalChooseButton = document.querySelector("[data-action=choose-secondary]");
 const confirmButton = document.querySelector("[data-action=confirm]");
+const revealButton = document.querySelector("[data-action=reveal-tactical]");
+const tacticalReveal = document.querySelector("[data-tactical-reveal]");
+const tacticalRevealCard = document.querySelector("[data-tactical-reveal-card]");
 let viewingSelections = false;
 
 primaryOptions.innerHTML = primaryCards.map((card) => `
@@ -40,6 +43,20 @@ function updateTrackerStatus() {
   tacticalChooseButton.classList.toggle("is-selected", Boolean(trackerState.tacticalTask));
   primaryChooseButton.setAttribute("aria-pressed", Boolean(trackerState.primaryTask));
   tacticalChooseButton.setAttribute("aria-pressed", Boolean(trackerState.tacticalTask));
+  const canReveal = Boolean(trackerState.lockedAt && trackerState.tacticalTask);
+  revealButton.disabled = !canReveal;
+  revealButton.textContent = trackerState.tacticalRevealed ? "已触发揭示" : "触发揭示";
+  revealButton.classList.toggle("primary", Boolean(trackerState.tacticalRevealed));
+  if (trackerState.tacticalRevealed && trackerState.tacticalTask) {
+    const revealedCard = tacticalCards.find((card) => card.id === trackerState.tacticalTask.id);
+    if (revealedCard) {
+      tacticalRevealCard.innerHTML = renderCard(revealedCard);
+      tacticalReveal.hidden = false;
+    }
+  } else {
+    tacticalRevealCard.innerHTML = "";
+    tacticalReveal.hidden = true;
+  }
   if (trackerState.lockedAt) {
     const lockTime = new Date(trackerState.lockedAt).toLocaleString("zh-CN", {
       year: "numeric",
@@ -50,7 +67,7 @@ function updateTrackerStatus() {
       second: "2-digit",
     });
     statusValue.textContent = `选择在 ${lockTime} 锁定`;
-    log.innerHTML = `已锁定：<strong>${selections.join(" · ")}</strong>。点击“查看选择”仅查看已锁定的选择。`;
+    log.textContent = "选择已锁定。点击“查看选择”仅查看已锁定的选择。";
     confirmButton.textContent = "查看选择";
     confirmButton.classList.toggle("primary", viewingSelections);
     return;
@@ -91,6 +108,13 @@ function resetSelectionChoices() {
   tacticalOptions.innerHTML = "";
 }
 
+function hideSelectionPickers() {
+  viewingSelections = false;
+  resetSelectionChoices();
+  primaryPicker.hidden = true;
+  tacticalPicker.hidden = true;
+}
+
 function showPrimaryPicker() {
   if (trackerState.lockedAt) return;
   primaryPicker.hidden = false;
@@ -129,11 +153,19 @@ document.querySelector("[data-action=confirm]").addEventListener("click", () => 
   }
 
   trackerState.lockedAt = new Date().toISOString();
+  delete trackerState.tacticalRevealed;
   saveTrackerState();
   viewingSelections = false;
   primaryPicker.hidden = true;
   tacticalPicker.hidden = true;
   updateTrackerStatus();
+});
+revealButton.addEventListener("click", () => {
+  if (revealButton.disabled || !trackerState.tacticalTask) return;
+  trackerState.tacticalRevealed = true;
+  saveTrackerState();
+  updateTrackerStatus();
+  log.textContent = "战术行动已揭示。";
 });
 document.querySelector("[data-action=clear-selection]").addEventListener("click", () => {
   localStorage.removeItem(TRACKER_STORAGE_KEY);
@@ -141,6 +173,7 @@ document.querySelector("[data-action=clear-selection]").addEventListener("click"
   delete trackerState.primaryTask;
   delete trackerState.tacticalTask;
   delete trackerState.lockedAt;
+  delete trackerState.tacticalRevealed;
   viewingSelections = false;
   resetSelectionChoices();
   primaryPicker.hidden = true;
@@ -189,6 +222,7 @@ document.querySelectorAll("[data-tactical-category]").forEach((button) => {
           title: cardChoice.dataset.tacticalTitle,
           category,
         };
+        delete trackerState.tacticalRevealed;
         saveTrackerState();
         tacticalPicker.hidden = true;
         updateTrackerStatus();
@@ -198,4 +232,10 @@ document.querySelectorAll("[data-tactical-category]").forEach((button) => {
   });
 });
 
+window.addEventListener("pageshow", () => {
+  hideSelectionPickers();
+  updateTrackerStatus();
+});
+
+hideSelectionPickers();
 updateTrackerStatus();
