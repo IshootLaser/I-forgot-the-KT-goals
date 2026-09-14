@@ -166,6 +166,7 @@ revealButton.addEventListener("click", () => {
   saveTrackerState();
   updateTrackerStatus();
   log.textContent = "战术行动已揭示。";
+  tacticalReveal.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 document.querySelector("[data-action=clear-selection]").addEventListener("click", () => {
   localStorage.removeItem(TRACKER_STORAGE_KEY);

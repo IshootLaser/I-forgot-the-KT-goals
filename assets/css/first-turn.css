@@ -121,3 +121,29 @@
 .first-turn-toggle:not(.is-me) .first-turn-thumb {
   transform: translateX(100%);
 }
+@media (max-width: 680px) {
+  .first-turn-toggle {
+    gap: 0.4rem;
+    padding: 0.75rem 0.65rem;
+  }
+  .first-turn-round {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .first-turn-round strong {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .first-turn-side-icon {
+    flex: 0 0 18px;
+    font-size: 19px;
+    text-align: center;
+  }
+  .first-turn-me-icon { margin-left: 0; }
+  .first-turn-opponent-icon { margin-left: -0.25rem; }
+  .first-turn-switch {
+    flex: 0 1 38vw;
+    width: 128px;
+    min-width: 112px;
+  }
+}
