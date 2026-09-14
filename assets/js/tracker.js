@@ -181,7 +181,7 @@ document.querySelector("[data-action=confirm]").addEventListener("click", () => 
     viewingSelections = !viewingSelections;
     primaryPicker.hidden = !viewingSelections;
     criticalPicker.hidden = true;
-    tacticalPicker.hidden = !viewingSelections;
+    tacticalPicker.hidden = !viewingSelections || Boolean(trackerState.tacticalRevealed);
     if (viewingSelections) showLockedSelections();
     else resetSelectionChoices();
     updateTrackerStatus();
@@ -210,6 +210,7 @@ revealButton.addEventListener("click", () => {
   if (revealButton.disabled || !trackerState.tacticalTask) return;
   trackerState.tacticalRevealed = true;
   saveTrackerState();
+  tacticalPicker.hidden = true;
   updateTrackerStatus();
   log.textContent = "战术行动已揭示。";
   tacticalReveal.scrollIntoView({ behavior: "smooth", block: "start" });
