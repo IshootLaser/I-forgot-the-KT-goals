@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>先手追踪 · Kill Team Command Deck</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Noto+Serif+SC:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css?v=0.1.4">
   <link rel="stylesheet" href="assets/css/tracker.css?v=0.1.4">
   <link rel="stylesheet" href="assets/css/first-turn.css?v=0.1.4">
+  <script src="assets/js/preload.js?v=0.1.4"></script>
 </head>
 <body class="min-h-screen">
   <main class="first-turn-shell">
@@ -38,5 +38,18 @@
     </section>
   </main>
   <script src="assets/js/first-turn.js?v=0.1.4"></script>
+  <script>
+    if (window.setupPagePreload) {
+      window.setupPagePreload({
+        pageUrl: 'tracker.html',
+        selector: 'a[href="tracker.html"]',
+        resources: [
+          ['tracker.html', 'document'],
+          ['assets/css/tracker.css?v=0.1.4', 'style'],
+          ['assets/js/tracker.js?v=0.1.4', 'script']
+        ]
+      });
+    }
+  </script>
 </body>
 </html>

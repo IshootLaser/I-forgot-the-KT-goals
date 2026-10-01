@@ -84,6 +84,20 @@
   </main>
   <button class="back-to-top" type="button" data-back-to-top aria-label="返回顶部" title="返回顶部"></button>
   <script src="assets/js/app.js?v=0.1.4"></script>
+  <script src="assets/js/preload.js?v=0.1.4"></script>
   <script src="assets/js/tracker.js?v=0.1.4"></script>
+  <script>
+    if (window.setupPagePreload) {
+      window.setupPagePreload({
+        pageUrl: 'first-turn.html',
+        selector: 'a[href="first-turn.html"]',
+        resources: [
+          ['first-turn.html', 'document'],
+          ['assets/css/first-turn.css?v=0.1.4', 'style'],
+          ['assets/js/first-turn.js?v=0.1.4', 'script']
+        ]
+      });
+    }
+  </script>
 </body>
 </html>

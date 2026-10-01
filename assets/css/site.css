@@ -11,6 +11,7 @@
       --kt-border: #2c323d;
     }
     body {
+      min-height: 100vh;
       background-color: var(--kt-dark);
       color: #e2e8f0;
       font-family: 'Noto Serif SC', serif;

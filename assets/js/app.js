@@ -15,20 +15,20 @@
           tag: "战略计划 · 秘密选择",
           ruleHtml: `
             <div class="text-[12.5px] sm:text-[13px] leading-relaxed space-y-2.5 mt-1">
-              <p class="text-neutral-200">在第一转折点中，作为一次<b>战略计划</b>，将本卡面朝下放置在一旁，秘密选择<b>关键行动 OP (CRIT OP)</b> 作为自己的主要行动。</p>
+              <p class="text-neutral-200">在第一转折点中，作为一次<b>战略计划</b>，将本卡面朝下放置在一旁（或隐藏一枚对应骰子），秘密选择<b>关键行动 OP (CRITICAL OP)</b> 作为自己的主要行动。</p>
               <div class="p-3 rounded bg-red-950/50 border border-red-600/50 text-red-200 my-2">
                 <div class="font-bold text-xs sm:text-sm flex items-center justify-between text-red-300">
                   <span>目标行动：关键行动 OP</span>
                   <span class="font-mono-kt text-[10.5px] leading-none bg-black/80 px-2 py-1 rounded border border-red-700/60 text-red-300 inline-block">CRIT OP</span>
                 </div>
                 <div class="text-[12px] mt-1 text-neutral-300 leading-snug">
-                  通过执行任务行动和控制目标标识获得的 VP（常规上限 6 VP）。
+                  通过执行任务行动和控制目标标识来获得 VP（常规上限 6 VP）。
                 </div>
               </div>
               <div class="border-t border-neutral-700/80 pt-2">
                 <div class="text-red-400 font-bold text-xs sm:text-sm leading-normal">胜利点数奖励 (VP)</div>
                 <p class="text-[12.5px] sm:text-[13px] text-neutral-200 mt-1 leading-snug">
-                  战斗结束时揭示本卡。从<b>关键行动 OP</b>获得额外 VP，数量等于通过该行动所获 <b>VP 数量的一半（向上取整）</b>。
+                  战斗结束时，双方同时揭示自己的主要行动 OP。从<b>关键行动 OP</b>获得额外 VP，数量等于通过该行动 OP 所获 <b>VP 数量的一半（向上取整）</b>。
                 </p>
                 <p class="text-[11px] text-red-300 font-mono-kt mt-1 font-semibold leading-normal">※ 若关键行动拿到 6 VP，本卡提供最高 +3 额外 VP。</p>
               </div>
@@ -61,20 +61,20 @@
           tag: "战略计划 · 秘密选择",
           ruleHtml: `
             <div class="text-[12.5px] sm:text-[13px] leading-relaxed space-y-2.5 mt-1">
-              <p class="text-neutral-200">在第一转折点中，作为一次<b>战略计划</b>，将本卡面朝下放置在一旁，秘密选择<b>战术行动 OP (TAC OP)</b> 作为自己的主要行动。</p>
+              <p class="text-neutral-200">在第一转折点中，作为一次<b>战略计划</b>，将本卡面朝下放置在一旁（或隐藏一枚对应骰子），秘密选择<b>战术行动 OP (TACTICAL OP)</b> 作为自己的主要行动。</p>
               <div class="p-3 rounded bg-red-950/50 border border-red-600/50 text-red-200 my-2">
                 <div class="font-bold text-xs sm:text-sm flex items-center justify-between text-red-300">
                   <span>目标行动：战术行动 OP</span>
                   <span class="font-mono-kt text-[10.5px] leading-none bg-black/80 px-2 py-1 rounded border border-red-700/60 text-red-300 inline-block">TAC OP</span>
                 </div>
                 <div class="text-[12px] mt-1 text-neutral-300 leading-snug">
-                  通过达成秘密选定的战术行动原型条件所获的 VP（常规上限 6 VP）。
+                  根据杀戮小队原型秘密选择并达成条件所获的 VP（常规上限 6 VP）。
                 </div>
               </div>
               <div class="border-t border-neutral-700/80 pt-2">
                 <div class="text-red-400 font-bold text-xs sm:text-sm leading-normal">胜利点数奖励 (VP)</div>
                 <p class="text-[12.5px] sm:text-[13px] text-neutral-200 mt-1 leading-snug">
-                  战斗结束时揭示本卡。从<b>战术行动 OP</b>获得额外 VP，数量等于通过该行动所获 <b>VP 数量的一半（向上取整）</b>。
+                  战斗结束时，双方同时揭示自己的主要行动 OP。从<b>战术行动 OP</b>获得额外 VP，数量等于通过该行动 OP 所获 <b>VP 数量的一半（向上取整）</b>。
                 </p>
                 <p class="text-[11px] text-red-300 font-mono-kt mt-1 font-semibold leading-normal">※ 若战术行动拿到 6 VP，本卡提供最高 +3 额外 VP。</p>
               </div>
@@ -107,7 +107,7 @@
           tag: "战略计划 · 秘密选择",
           ruleHtml: `
             <div class="text-[12.5px] sm:text-[13px] leading-relaxed space-y-2.5 mt-1">
-              <p class="text-neutral-200">在第一转折点中，作为一次<b>战略计划</b>，将本卡面朝下放置在一旁，秘密选择<b>击杀行动 OP (KILL OP)</b> 作为自己的主要行动。</p>
+              <p class="text-neutral-200">在第一转折点中，作为一次<b>战略计划</b>，将本卡面朝下放置在一旁（或隐藏一枚对应骰子），秘密选择<b>击杀行动 OP (KILL OP)</b> 作为自己的主要行动。</p>
               <div class="p-3 rounded bg-red-950/50 border border-red-600/50 text-red-200 my-2">
                 <div class="font-bold text-xs sm:text-sm flex items-center justify-between text-red-300">
                   <span>目标行动：击杀行动 OP</span>
@@ -120,7 +120,7 @@
               <div class="border-t border-neutral-700/80 pt-2">
                 <div class="text-red-400 font-bold text-xs sm:text-sm leading-normal">胜利点数奖励 (VP)</div>
                 <p class="text-[12.5px] sm:text-[13px] text-neutral-200 mt-1 leading-snug">
-                  战斗结束时揭示本卡。从<b>击杀行动 OP</b>获得额外 VP，数量等于通过该行动所获 <b>VP 数量的一半（向上取整）</b>。
+                  战斗结束时，双方同时揭示自己的主要行动 OP。从<b>击杀行动 OP</b>获得额外 VP，数量等于通过该行动 OP 所获 <b>VP 数量的一半（向上取整）</b>。
                 </p>
                 <p class="text-[11px] text-red-300 font-mono-kt mt-1 font-semibold leading-normal">※ 若击杀行动拿到 6 VP，本卡提供最高 +3 额外 VP。</p>
               </div>
@@ -155,31 +155,34 @@
           tag: "击杀等级与残废结算",
           ruleHtml: `
             <div class="text-[12px] sm:text-[12.5px] leading-snug space-y-1.5">
-              <p class="text-neutral-200">游戏开始时无击杀等级。随着敌方特工残废，击杀等级提升（最高 5 级）。</p>
+              <p class="text-neutral-200">在游戏开始时，您不会拥有击杀等级。随着敌方特工被残废，您的击杀等级提升，最多到 5 级。</p>
               <ul class="list-disc list-inside text-neutral-100 text-[11.5px] sm:text-[12px] space-y-0.5">
-                <li>每提升到新的击杀等级：<b>获得 1 VP</b></li>
-                <li>对战结束时，若击杀等级大于对手：<b>额外获得 1 VP</b></li>
+                <li>每当在您提升到新的击杀等级时：<b>获得 1 VP</b></li>
+                <li>在对战结束时，如果您的击杀等级大于您的对手：<b>获得 1 VP</b></li>
               </ul>
               <div class="border border-neutral-700 rounded overflow-hidden mt-1 shadow-md">
                 <table class="w-full text-center text-[10.5px] sm:text-[11px] font-mono-kt border-collapse bg-neutral-950/80">
                   <thead>
                     <tr class="bg-red-950/80 text-red-300 border-b border-neutral-700">
-                      <th class="py-1 px-1">敌人数</th>
-                      <th class="py-1">Lv1</th><th class="py-1">Lv2</th><th class="py-1">Lv3</th><th class="py-1">Lv4</th><th class="py-1">Lv5</th>
+                      <th class="py-0.5 px-1">起始数量</th>
+                      <th class="py-0.5">1级</th><th class="py-0.5">2级</th><th class="py-0.5">3级</th><th class="py-0.5">4级</th><th class="py-0.5">5级</th>
                     </tr>
                   </thead>
                   <tbody class="divide-y divide-neutral-800 text-neutral-200 font-semibold">
-                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">5-6</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">5</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">6</td><td>1</td><td>2</td><td>4</td><td>5</td><td>6</td></tr>
                     <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">7</td><td>1</td><td>3</td><td>4</td><td>6</td><td>7</td></tr>
                     <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">8</td><td>2</td><td>3</td><td>5</td><td>6</td><td>8</td></tr>
                     <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">9</td><td>2</td><td>4</td><td>5</td><td>7</td><td>9</td></tr>
-                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">10-11</td><td>2</td><td>4</td><td>6/7</td><td>8/9</td><td>10/11</td></tr>
+                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">10</td><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td></tr>
+                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">11</td><td>2</td><td>4</td><td>7</td><td>9</td><td>11</td></tr>
                     <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">12</td><td>2</td><td>5</td><td>7</td><td>10</td><td>12</td></tr>
-                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">13-14</td><td>3</td><td>5/6</td><td>8</td><td>10/11</td><td>13/14</td></tr>
+                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">13</td><td>3</td><td>5</td><td>8</td><td>10</td><td>13</td></tr>
+                    <tr><td class="bg-neutral-900 font-bold text-amber-400 py-0.5">14</td><td>3</td><td>6</td><td>8</td><td>11</td><td>14</td></tr>
                   </tbody>
                 </table>
               </div>
-              <p class="text-[10.5px] text-neutral-400 italic pt-0.5">WCW赛事说明：消耗品构装体/变异害虫单位不计入击杀表。</p>
+              <p class="text-[10px] sm:text-[10.5px] text-neutral-400 italic pt-0.5">WCW专属FAQ：可消耗/消耗品构装体/变异害虫单位被残废不产生指示物且不计入击杀表。</p>
             </div>
           `,
           footer: "KILL OPERATION CARD"
@@ -200,19 +203,19 @@
         categoryName: "关键行动 OP",
         type: "关键行动 1",
         title: "1. 占领",
-        subtitle: "CAPTURE",
+        subtitle: "SECURE",
         colorScheme: "amber",
         cornerColor: "#f59e0b",
         front: {
           actionName: "占领 (1 AP)",
-          actionDetail: "▶ 该活跃特工控制的一个目标标识被您的杀戮小队占领，直到该标识被敌方占领为止。<br>◆ 特工不能在第一转折点执行，也不能在敌方控制范围内执行。",
+          actionDetail: "▶ 该活跃特工控制的一个目标标识被您的杀戮小队占领，直到这个目标标识被敌方杀戮小队占领为止。<br>◆ 特工不能在第一转折点中执行此行动，也不能在位于一名敌方特工的控制范围内时执行此行动。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
                 <p>在第一转折点之后的每个转折点结束时：</p>
-                <p class="pl-2.5 border-l-2 border-amber-500/60">· 只要有任意目标标识被己方占领：<b>获得 1 VP</b></p>
-                <p class="pl-2.5 border-l-2 border-amber-500/60">· 若己方占领的目标标识数量大于对手：<b>获得 1 VP</b></p>
+                <p class="pl-2.5 border-l-2 border-amber-500/60">· 只要有任意目标标识被您的杀戮小队占领，您<b>获得 1 VP</b>。</p>
+                <p class="pl-2.5 border-l-2 border-amber-500/60">· 如果您的杀戮小队占领的目标标识数量大于对手的杀戮小队，您<b>获得 1 VP</b>。</p>
               </div>
             </div>
           `,
@@ -231,13 +234,13 @@
         cornerColor: "#f59e0b",
         front: {
           actionName: "掠夺 (1 AP)",
-          actionDetail: "▶ 该活跃特工控制的一个目标标识被掠夺。<br>◆ 特工不能在第一转折点执行，不能在敌方控制范围内执行，且该标识在此转折点尚未被掠夺过。",
+          actionDetail: "▶ 该活跃特工控制的一个目标标识被掠夺。<br>◆ 特工不能在第一转折点中执行此行动，也不能在位于一名敌方特工的控制范围内时执行此行动，也不能在该目标标识在此转折点中已经被掠夺的情况下执行此行动。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
-                <p>每当一名己方特工执行掠夺行动时：<b>获得 1 VP</b></p>
-                <p class="text-neutral-400 text-[11px] sm:text-xs">（每个转折点中通过掠夺最多可获得 2 VP）</p>
+                <p>每当一名己方特工执行掠夺行动时，您<b>获得 1 VP</b>。</p>
+                <p class="text-neutral-400 text-[11px] sm:text-xs">（每个转折点中最多获得 2 VP）</p>
               </div>
             </div>
           `,
@@ -251,19 +254,19 @@
         categoryName: "关键行动 OP",
         type: "关键行动 3",
         title: "3. 情报传输",
-        subtitle: "TRANSMIT INTEL",
+        subtitle: "TRANSMISSION",
         colorScheme: "amber",
         cornerColor: "#f59e0b",
         front: {
           actionName: "开始传输 (1 AP)",
-          actionDetail: "▶ 该活跃特工控制的一个目标标识开始传输，持续直到下一个转折点开始为止。<br>◆ 特工不能在第一转折点执行，也不能在敌方特工控制范围内执行。",
+          actionDetail: "▶ 该活跃特工控制的一个目标标识开始进行传输，直到下一个转折点开始为止。<br>◆ 特工不能在第一转折点中执行此行动，也不能在位于一名敌方特工的控制范围内时执行此行动。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
                 <p>在第一转折点之后的每个转折点结束时：</p>
-                <p class="pl-2.5 border-l-2 border-amber-500/60">· 己方控制正在进行传输的任意目标标识：<b>获得 1 VP</b></p>
-                <p class="pl-2.5 border-l-2 border-amber-500/60">· 己方控制传输中的标识数量大于对手：<b>获得 1 VP</b></p>
+                <p class="pl-2.5 border-l-2 border-amber-500/60">· 如果己方特工控制正在进行传输的任何目标标识，您<b>获得 1 VP</b>。</p>
+                <p class="pl-2.5 border-l-2 border-amber-500/60">· 如果己方特工控制的正在进行传输的目标标识数量大于敌方特工，您<b>获得 1 VP</b>。</p>
               </div>
             </div>
           `,
@@ -277,18 +280,18 @@
         categoryName: "关键行动 OP",
         type: "关键行动 4",
         title: "4. 宝球",
-        subtitle: "THE ORB",
+        subtitle: "ORB",
         colorScheme: "amber",
         cornerColor: "#f59e0b",
         front: {
           actionName: "移动宝球 (1 AP)",
-          actionDetail: "开局中央标识拥有宝球指示物。<br>▶ 若活跃特工控制拥有宝球的标识：若在中央，移动至任一玩家目标处；若在玩家目标处，移回中央。<br>◆ 第一转折点不能执行，不可在敌方控制内执行。",
+          actionDetail: "【额外规则】在战斗开始时，中央的目标标识拥有宝球指示物。<br>▶ 如果活跃特工控制了拥有宝球指示物的目标标识，按照以下规则移动宝球：<br>· 如果中央目标标识拥有宝球指示物，将其移动到任一玩家的目标标识处（由你选择）。<br>· 如果一名玩家的目标标识拥有宝球指示物，将其移动到中央目标标识处。<br>◆ 特工不能在第一转折点中执行此行动，不能在位于一名敌方特工的控制范围内时执行此行动，不能在未控制拥有宝球指示物的目标标识时执行此行动。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
                 <p>在第一转折点之后的每个转折点结束时：</p>
-                <p class="pl-2.5 border-l-2 border-amber-500/60">· 己方特工每控制一个<b>没有宝球指示物</b>的目标标识：<b>获得 1 VP</b>。</p>
+                <p class="pl-2.5 border-l-2 border-amber-500/60">· 己方特工每控制一个<b>没有宝球指示物</b>的目标标识，您<b>获得 1 VP</b>。</p>
               </div>
             </div>
           `,
@@ -306,15 +309,15 @@
         colorScheme: "amber",
         cornerColor: "#f59e0b",
         front: {
-          actionName: "主张宣告 (战略计划)",
-          actionDetail: "第 1 转折点后的战略计划步骤，双方轮流为本转折点选择一个目标标识声明其一：<br>① 转折点结束时己方控制该标识；<br>② 转折点结束时敌方不争夺该标识。<br>◆ 对战中每个目标标识每名玩家限选 1 次。",
+          actionName: "申索主张 (战略计划 · 计划步骤)",
+          actionDetail: "【额外规则】在第一个战略阶段之后的每个战略阶段的计划步骤开始时，从拥有先手权的玩家开始，每名玩家必须为当前转折点选择一个目标标识和下列主张中的一项：<br>· 在本转折点结束时，己方特工将控制该目标标识。<br>· 在本转折点结束时，敌方特工不会争夺该目标标识。<br>◆ 同一场对战中，每一名玩家选择每一个目标标识的次数不能大于 1 次（因此玩家在对战中必须将每个目标标识选择一次）。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
-                <p>在第一转折点后的每个转折点结束时：</p>
-                <p class="pl-2.5 border-l-2 border-amber-500/60">· 己方控制目标标识数大于敌方：<b>获得 1 VP</b></p>
-                <p class="pl-2.5 border-l-2 border-amber-500/60">· 己方选择的主张达成：<b>获得 1 VP</b></p>
+                <p>在第一个转折点后的每个转折点结束时：</p>
+                <p class="pl-2.5 border-l-2 border-amber-500/60">· 如果己方特工控制的目标标识数量，大于敌方特工控制的目标标识数量，您<b>获得 1 VP</b>。</p>
+                <p class="pl-2.5 border-l-2 border-amber-500/60">· 如果您选择的主张达成，您<b>获得 1 VP</b>。</p>
               </div>
             </div>
           `,
@@ -328,18 +331,18 @@
         categoryName: "关键行动 OP",
         type: "关键行动 6",
         title: "6. 能量电池",
-        subtitle: "POWER CELLS",
+        subtitle: "ENERGY CELLS",
         colorScheme: "amber",
         cornerColor: "#f59e0b",
         front: {
-          actionName: "拾取目标标识规则",
-          actionDetail: "特工可对目标标识执行拾取标识行动：<br>· 第2转折点：需额外花费 2 AP (不可减免)<br>· 第3转折点：需额外花费 1 AP (不可减免)<br>· 第4转折点：照常 1 AP<br>◆ 携带标识的特工被移除重新部署距离不可超 6 寸。",
+          actionName: "额外规则：拾取目标标识",
+          actionDetail: "在以下的转折点中，特工可对所有目标标识执行拾取标识行动：<br>· 第二转折点：您必须额外花费 2 AP（该行动不能是无消耗的行动，并且此行动的 AP 不能被减少）。<br>· 第三转折点：您必须额外花费 1 AP（该行动不能是无消耗的行动，并且此行动的 AP 不能被减少）。<br>· 第四转折点：照常。<br>◆ 每当一名特工携带一枚目标标识时，该特工被移除并重新部署时，距离不能超过 6 寸。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
-                <p>· 每个转折点结束时，控制目标数大于敌方：<b>获得 1 VP</b></p>
-                <p>· 战斗结束时，己方特工每携带一个目标标识：<b>获得 1 VP</b></p>
+                <p>· 在第一个转折点后的每个转折点结束时，如果己方特工控制的目标标识数量，大于敌方特工控制的目标标识数量，您<b>获得 1 VP</b>。</p>
+                <p>· 在战斗结束时，每有一个己方特工正在携带的目标标识，您<b>获得 1 VP</b>。</p>
               </div>
             </div>
           `,
@@ -358,14 +361,14 @@
         cornerColor: "#f59e0b",
         front: {
           actionName: "下载 (1 AP)",
-          actionDetail: "▶ 控制中央或对手目标标识被下载。<br>◆ 第1、2转折点不可执行，不可在敌方控制内执行，本次对战中被下载过的标识不可再次下载。",
+          actionDetail: "▶ 活跃特工控制的一个中央或对手目标标识被下载。<br>◆ 特工不能在第一、第二转折点中执行此行动，也不能在位于一名敌方特工的控制范围内时执行此行动，也不能在该目标标识在本次对战中已经被下载过的情况下执行此行动。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[12px] sm:text-[12.5px] space-y-1 text-neutral-200 leading-snug">
-                <p>· 第1转折点后每转折点结束：控制目标数大于敌方获得 <b>1 VP</b>（无视已下载标识）。</p>
-                <p>· 第 3 转折点执行下载：<b>获得 1 VP</b></p>
-                <p>· 第 4 转折点执行下载：<b>获得 2 VP</b></p>
+                <p>· 在第一个转折点后的每个转折点结束时，如果己方特工控制的目标标识数量，大于敌方特工控制的目标标识数量，您<b>获得 1 VP</b>。在判断数量时，无视被下载过的目标标识。</p>
+                <p>· 每当一名己方特工在第三转折点期间，执行下载行动时，您<b>获得 1 VP</b>。</p>
+                <p>· 每当一名己方特工在第四转折点期间，执行下载行动时，您<b>获得 2 VP</b>。</p>
               </div>
             </div>
           `,
@@ -384,13 +387,13 @@
         cornerColor: "#f59e0b",
         front: {
           actionName: "编译数据 / 传输数据",
-          actionDetail: "<b>编译(1AP)</b>：控制标识获1点数据(转折点限1次，第1回合除外)。<br><b>传输(1AP)</b>：移除控制标识所有数据点(仅限第4转折点执行)。",
+          actionDetail: "▶ <b>编译数据 (1 AP)</b>：活跃特工控制的一个目标标识获得 1 点数据点。使用一枚骰子或指示物来记录该目标标识上的数据点。<br>◆ 特工不能在第一转折点中执行此行动，也不能在位于一名敌方特工的控制范围内时执行此行动，也不能在该目标标识在此转折点中已经获得过 1 点数据点情况下执行此行动。<br>▶ <b>传输数据 (1 AP)</b>：针对活跃特工控制的一个目标标识，移除它的所有数据点。<br>◆ 特工不能在第一、第二、第三转折点中执行此行动，也不能在位于一名敌方特工的控制范围内时执行此行动，也不能在该目标标识没有可供移除的数据点的情况下执行此行动。",
           ruleHtml: `
             <div class="mt-2 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[11.5px] sm:text-[12px] space-y-1 text-neutral-200 leading-snug">
-                <p>· 第2和第3转折点结束：编译数据次数比敌方更多获得 <b>1 VP</b>。</p>
-                <p>· 执行传输数据：<b>移除的数据点数量 = 获得的 VP 数量</b>。</p>
+                <p>· 在第二和第三转折点结束时，如果己方特工在此转折点期间，执行过的编译数据行动次数比敌方特工更多，您<b>获得 1 VP</b>。</p>
+                <p>· 每当一名己方特工执行传输数据行动时，您获得的 VP 数量等于您移除的数据点的数量。</p>
               </div>
             </div>
           `,
@@ -408,14 +411,14 @@
         colorScheme: "amber",
         cornerColor: "#f59e0b",
         front: {
-          actionName: "重启钝化标识 (2 AP)",
-          actionDetail: "计划阶段双方秘密选一标识骰子同时亮出。若同号则该标识钝化；若异号则双方未选的标识钝化。<br><b>重启(2AP)</b>：解除控制的钝化标识(第1转折点不可用)。",
+          actionName: "额外规则：钝化 / 重启 (2 AP)",
+          actionDetail: "【额外规则】在设置战斗时，在部署目标标识后，将每个目标标识标为 1 至 3。在每个战略阶段的计划步骤开始时，每名玩家秘密选择一个目标标识，在手中藏一个骰子，对应该目标标识的数字。然后双方同时展示自己的选择。如果双方玩家选择的数字相同，该目标标识在此转折点期间处于钝化。如果双方选择不同，则双方都没有选择的目标标识在此转折点期间处于钝化。<br>▶ <b>任务行动：重启 (2 AP)</b>：活跃特工控制的一个钝化的目标标识，不再钝化。<br>◆ 特工不能在第一转折点中执行此行动，不能在位于一名敌方特工的控制范围内时执行此行动。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80">
               <div class="text-amber-400 font-bold text-xs sm:text-sm mb-1">胜利点数 (VP)</div>
               <div class="text-[12px] sm:text-[12.5px] space-y-1 text-neutral-200 leading-snug">
                 <p>在第一转折点之后的每个转折点结束时：</p>
-                <p class="pl-2.5 border-l-2 border-amber-500/60">· 己方特工每控制一个目标标识，<b>获得 1 VP</b>（计算数量时完全忽略钝化的标识）。</p>
+                <p class="pl-2.5 border-l-2 border-amber-500/60">· 己方特工每控制一个目标标识，您<b>获得 1 VP</b>。在判断目标标识的数量时，忽略钝化的目标标识。</p>
               </div>
             </div>
           `,
@@ -437,15 +440,16 @@
         colorScheme: "red",
         cornerColor: "#ef4444",
         front: {
-          revealText: "首次争夺目标敌方特工残废时，或首次己方执行清理行动时。",
+          revealText: "第一次有一名正在争夺目标标识的敌方特工被残废时，或者第一次有一名己方特工执行清理行动时（以先达成的条件为准）。",
           actionName: "清理 (1 AP)",
-          actionDetail: "敌方争夺特工残废时目标放己方扫荡指示物。<br>▶ <b>清理</b>：控制的目标标识被清理(第1回合除外)。",
+          actionDetail: "【额外规则】当一名正在争夺一个目标标识的敌方特工被残废时，该目标标识获得一枚己方扫荡指示物（如果该目标标识还没有扫荡指示物），直到下一个战略阶段的就绪步骤前。<br>▶ <b>任务行动：清理 (1 AP)</b>：活跃特工控制的一个目标标识在本转折点中被清理。<br>◆ 特工不能在第一转折点中执行此行动，不能在位于一名敌方特工的控制范围内时执行此行动。",
           ruleHtml: `
             <div class="mt-1.5 pt-1.5 border-t border-neutral-700/80 text-[11.5px] sm:text-[12px] space-y-1 text-neutral-200 leading-snug">
               <div class="text-red-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>· 转折点结束，控制有扫荡指示物目标：<b>1 VP</b></p>
-              <p>· 若该目标还被清理过：改为 <b>2 VP</b> (每回合限2VP)</p>
-              <p class="text-neutral-400 italic text-[10.5px]">WCW: 消耗品构装体/变异害虫单位不产生指示物。</p>
+              <p>· 在第一转折点之后的每个转折点结束时，如果己方特工控制任意数量拥有己方扫荡指示物的目标标识，您<b>获得 1 VP</b>。</p>
+              <p>· 如果上述条件成立，且上述目标标识本被清理过，您改为<b>获得 2 VP</b>。</p>
+              <p class="text-neutral-400 text-[10.5px]">（每个转折点中，您通过本行动 OP 最多只能获得 2 VP）</p>
+              <p class="text-neutral-400 italic text-[10px]">WCW专属FAQ：可消耗/消耗品构装体/变异害虫单位被残废不会产生扫荡指示物。</p>
             </div>
           `,
           footer: "SEEK & DESTROY"
@@ -463,14 +467,15 @@
         colorScheme: "red",
         cornerColor: "#ef4444",
         front: {
-          revealText: "第一次有一名敌方特工被己方特工残废时揭示。",
+          revealText: "第一次有一名敌方特工被己方特工残废时。",
           actionName: "额外规则：主宰指示物",
-          actionDetail: "每当一名己方特工将敌方特工残废时，该己方特工获得一枚己方主宰指示物。",
+          actionDetail: "每当一名己方特工将一名敌方特工残废时，该己方特工获得一枚己方主宰指示物。",
           ruleHtml: `
             <div class="mt-2 pt-2 border-t border-neutral-700/80 text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
               <div class="text-red-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>第 3 和第 4 转折点结束时，可从未残废的己方特工上移除主宰指示物：每移除 1 枚获得 <b>1 VP</b>。（每转折点上限 3 VP）</p>
-              <p class="text-neutral-400 italic text-[10.5px]">WCW: 击杀消耗品/变异害虫特工不产生主宰指示物。</p>
+              <p>在第三和第四转折点结束时，您可以从未残废的己方特工上移除主宰指示物。您每移除一枚，您<b>获得 1 VP</b>。</p>
+              <p class="text-neutral-400 text-[11px]">（每个转折点中，您通过本行动 OP 最多获得 3 VP）</p>
+              <p class="text-neutral-400 italic text-[10.5px]">WCW专属FAQ：击杀可消耗/消耗品构装体/变异害虫单位不会产生主宰指示物。</p>
             </div>
           `,
           footer: "SEEK & DESTROY"
@@ -484,18 +489,18 @@
         categoryName: "战术行动 · 搜索与摧毁",
         type: "战术行动",
         title: "击垮",
-        subtitle: "CRUSH",
+        subtitle: "ROUTE",
         colorScheme: "red",
         cornerColor: "#ef4444",
         front: {
-          revealText: "第一次通过本行动 OP 获得 VP 时揭示。",
-          actionName: "特工斩首压制",
-          actionDetail: "每当己方特工将敌方残废：若己方位于对手降落区 6 寸内，得 1 VP；若该敌方特工耐伤属性 ≥ 12，改为得 2 VP。",
+          revealText: "您第一次通过本行动 OP 获得 VP 时。",
+          actionName: "特工残废判定",
+          actionDetail: "每当一名己方特工将一名敌方特工残废时：<br>· 如果该己方特工位于对手降落区的 6 寸内，您<b>获得 1 VP</b>；<br>· 如果上述条件成立，且该敌方特工的耐伤属性大于等于 12，您改为<b>获得 2 VP</b>。",
           ruleHtml: `
             <div class="mt-2 pt-2 border-t border-neutral-700/80 text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
               <div class="text-red-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>在敌方降落区前沿斩杀敌人；每个转折点最多获得 <b>2 VP</b>。</p>
-              <p class="text-neutral-400 italic text-[10.5px]">WCW: 残废消耗品/变异害虫特工无法获得 VP。</p>
+              <p>在敌方降落区前沿斩杀敌人；您在每个转折点中，通过此行动 OP 最多获得 <b>2 VP</b>。</p>
+              <p class="text-neutral-400 italic text-[10.5px]">WCW专属FAQ：残废可消耗/消耗品构装体/变异害虫单位不会获得 VP。</p>
             </div>
           `,
           footer: "SEEK & DESTROY"
@@ -515,15 +520,16 @@
         colorScheme: "green",
         cornerColor: "#10b981",
         front: {
-          revealText: "作为一次战略计划揭示。",
-          actionName: "侧翼控制判定",
-          actionDetail: "中线将战场分为左/右翼。完全位于一个侧翼且在对手领地内的特工争夺该侧翼。APL 总和大于敌方即控制。",
+          revealText: "作为一次战略计划。",
+          actionName: "额外规则：侧翼控制判定",
+          actionDetail: "画一条假想的中线，链接每个玩家杀戮区边界的中点，将杀戮区分为两个侧翼（左翼和右翼）。一名特工如果完全位于一个侧翼内，且位于对手领地内时，则该特工正在争夺该侧翼。如果争夺一个侧翼的己方特工的 APL 属性总和，大于正在争夺的敌方特工，则己方特工控制该侧翼。",
           ruleHtml: `
             <div class="mt-1.5 pt-1.5 border-t border-neutral-700/80 text-[11.5px] sm:text-[12px] space-y-1 text-neutral-200 leading-snug">
               <div class="text-green-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>· 揭示后每转折点结束，每控制一侧翼：<b>1 VP</b></p>
-              <p>· 若上一转折点也控制该侧翼：改为 <b>2 VP</b></p>
-              <p class="text-neutral-400 text-[10.5px]">（每个转折点中最多通过此卡获得 2 VP）</p>
+              <p>在您揭示此行动 OP 后，在第一个转折点后的每个转折点结束时：</p>
+              <p class="pl-2 border-l-2 border-green-500/60">· 己方特工每控制一个侧翼，您<b>获得 1 VP</b>。</p>
+              <p class="pl-2 border-l-2 border-green-500/60">· 如果己方特工在上一转折点结束时也控制了该侧翼（第一个转折点除外），则您改为<b>获得 2 VP</b>。</p>
+              <p class="text-neutral-400 text-[10.5px]">（每个转折点中，您最多通过此行动 OP 获得 2 VP）</p>
             </div>
           `,
           footer: "RECON"
@@ -537,18 +543,18 @@
         categoryName: "战术行动 · 侦察",
         type: "战术行动",
         title: "回收",
-        subtitle: "RETRIEVE",
+        subtitle: "RETRIEVAL",
         colorScheme: "green",
         cornerColor: "#10b981",
         front: {
-          revealText: "您第一次通过此行动 OP 获得 VP 时揭示。",
-          actionName: "回收 (1 AP)",
-          actionDetail: "▶ 控制未搜寻目标标识时，携带 1 枚己方回收标识，该目标视为已搜寻。<br>◆ 第 1 转折点不可执行，敌方控制内不可执行。",
+          revealText: "您第一次通过此行动 OP 获得 VP 时。",
+          actionName: "任务行动：回收 (1 AP)",
+          actionDetail: "▶ 如果活跃特工控制了一个尚未被己方特工搜寻过的目标标识，那么该特工现在会携带一枚己方回收任务标识，且该目标标识视为被己方特工搜寻过。己方特工可对己方回收任务标识执行拾取标识行动。<br>◆ 特工不能在第一转折点中执行此行动，不能在位于一名敌方特工的控制范围内时执行此行动。",
           ruleHtml: `
             <div class="mt-2 pt-2 border-t border-neutral-700/80 text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
               <div class="text-green-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>· 每个目标标识首次被己方特工搜寻时：<b>获得 1 VP</b></p>
-              <p>· 对战结束时，己方每携带一枚回收任务标识：<b>获得 1 VP</b></p>
+              <p>· 对于每个目标标识，当该标识第一次被己方特工搜寻时，您<b>获得 1 VP</b>。</p>
+              <p>· 在对战结束时，己方特工每携带一枚回收任务标识，您<b>获得 1 VP</b>。</p>
             </div>
           `,
           footer: "RECON"
@@ -562,17 +568,18 @@
         categoryName: "战术行动 · 侦察",
         type: "战术行动",
         title: "刺探敌方动向",
-        subtitle: "SURVEILLANCE",
+        subtitle: "SCOUT ENEMY MOVEMENT",
         colorScheme: "green",
         cornerColor: "#10b981",
         front: {
-          revealText: "第一次己方特工执行侦查行动时揭示。",
-          actionName: "侦查 (1 AP)",
-          actionDetail: "▶ 选 6 寸外可见的一名就绪敌方特工，其处于监视状态直至就绪步骤。<br>◆ 拥有交战命令不能执行，第 1 转折点不能执行。",
+          revealText: "第一次一名己方特工执行侦查行动时。",
+          actionName: "任务行动：侦查 (1 AP)",
+          actionDetail: "▶ 选择活跃特工可见、且位于其 6 寸外的一名就绪敌方特工，该敌方特工视为处于监视状态，直到下一个战略阶段的就绪步骤。<br>◆ 特工不能在拥有交战命令时执行此行动，不能在第一转折点中执行此行动，不能在位于一名敌方特工的控制范围内时执行此行动。",
           ruleHtml: `
             <div class="mt-2 pt-2 border-t border-neutral-700/80 text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
               <div class="text-green-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>第1转折点后的转折点结束时，每有一个监视状态敌方特工对任一己方特工可见：<b>获得 1 VP</b>（每回合限2VP）。</p>
+              <p>在第一个转折点之后的每个转折点结束时，每有一个处于监视状态的敌方特工对任何己方特工可见，您便<b>获得 1 VP</b>。（注意：上述己方特工不需要是执行过侦查行动的特工）</p>
+              <p class="text-neutral-400 text-[11px]">（每个转折点中，您最多通过此行动 OP 获得 2 VP）</p>
             </div>
           `,
           footer: "RECON"
@@ -592,13 +599,16 @@
         colorScheme: "blue",
         cornerColor: "#3b82f6",
         front: {
-          revealText: "当您执行插上旗帜行动时揭示。",
-          actionName: "插上旗帜 (1 AP)",
-          actionDetail: "▶ 将己方旗帜放置于控制范围内、完全在对手领地内且距中立边缘 > 5 寸。全场限 1 次。<br>◆ 第 1 回合不可执行。",
+          revealText: "当您执行插上旗帜行动时。",
+          actionName: "任务行动：插上旗帜 (1 AP)",
+          actionDetail: "▶ 将己方旗帜任务标识放在位于活跃特工控制范围内、完全位于对手领地内、距离中立杀戮区边缘大于 5 寸的位置。特工可对己方旗帜任务标记执行拾取标识行动。<br>◆ 特工不能在第一转折点中执行此行动，不能在位于一名敌方特工的控制范围内时执行此行动，不能在一名字己方特工本次对战中已经执行过此行动后执行此行动。",
           ruleHtml: `
             <div class="mt-2 pt-2 border-t border-neutral-700/80 text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
               <div class="text-blue-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>转折点结束，旗帜在敌方领地且己方控制：<b>1 VP</b>；若无敌方争夺改为 <b>2 VP</b>。（旗帜在地面才得分，携带不计）</p>
+              <p>在第一个转折点后的每一个转折点结束时：</p>
+              <p class="pl-2 border-l-2 border-blue-500/60">· 如果己方旗帜任务标示完全位于对手领地内，且己方特工控制该标记，您<b>获得 1 VP</b>。</p>
+              <p class="pl-2 border-l-2 border-blue-500/60">· 如果上述条件成立，且没有敌方特工争夺该标记，您改为<b>获得 2 VP</b>。</p>
+              <p class="text-neutral-400 text-[10.5px]">（注意：己方旗帜任务标识只能放在杀戮区上才能得分，被携带时不能）</p>
             </div>
           `,
           footer: "SECURITY"
@@ -616,14 +626,17 @@
         colorScheme: "blue",
         cornerColor: "#3b82f6",
         front: {
-          revealText: "第一次争夺目标标识的己方特工被残废时揭示。",
+          revealText: "第一次正在争夺一枚目标标识的己方特工被残废时。",
           actionName: "额外规则：殉道者指示物",
-          actionDetail: "争夺目标的己方残废时该标识获殉道者指示物。(WCW: 特工仅首次残废时获得指示物)。",
+          actionDetail: "每当一名正在争夺一枚目标标识的己方特工被残废时，该标记获得一枚己方殉道者指示物。<br><span class='text-[11px] text-neutral-400'>【WCW更新】每名特工只有第一次被残废时，才会获得殉道者指示物。因此如果一名特工被残废后重新部署（例如神圣技师之环的重生协议），然后再次被残废，不能再次获得殉道者指示物。</span>",
           ruleHtml: `
             <div class="mt-1.5 pt-1.5 border-t border-neutral-700/80 text-[11.5px] sm:text-[12px] space-y-1 text-neutral-200 leading-snug">
               <div class="text-blue-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>转折点结束，若己方正在争夺有殉道者指示物的标识，可移除：每移除 1 枚得 <b>1 VP</b>；若己方还控制该标识改为 <b>2 VP</b>。</p>
-              <p class="text-neutral-400 italic text-[10.5px]">WCW: 消耗品/变异害虫单位被杀不产生指示物。</p>
+              <p>在第一个转折点后的每一个转折点结束时，如果己方特工正在争夺一个拥有 1 个或更多己方殉道者指示物的目标标识，您可以移除任意数量的上述指示物：</p>
+              <p class="pl-2 border-l-2 border-blue-500/60">· 您每以此方式移除 1 枚指示物，您<b>获得 1 VP</b>。</p>
+              <p class="pl-2 border-l-2 border-blue-500/60">· 如果己方特工还控制该目标标识，您改为<b>获得 2 VP</b>。</p>
+              <p class="text-neutral-400 text-[10.5px]">（每个转折点中，您最多通过此行动 OP 获得 2 VP）</p>
+              <p class="text-neutral-400 italic text-[10px]">WCW专属FAQ：可消耗/消耗品构装体/变异害虫单位被残废不会产生殉道者指示物。</p>
             </div>
           `,
           footer: "SECURITY"
@@ -637,17 +650,19 @@
         categoryName: "战术行动 · 安全保护",
         type: "战术行动",
         title: "使节",
-        subtitle: "EMISSARY",
+        subtitle: "ENVOY",
         colorScheme: "blue",
         cornerColor: "#3b82f6",
         front: {
-          revealText: "第一次您选择一名使节时揭示。",
-          actionName: "战略计划：委派使节",
-          actionDetail: "第 1 回合后的战略计划步骤，选一名己方特工为使节（不可连续两回合选同一特工）。",
+          revealText: "第一次您选择一名使节时。",
+          actionName: "额外规则：委派使节",
+          actionDetail: "作为第一个转折点后的每个转折点中，作为一次战略计划，选择一名己方特工成己方使节，直到下一个战略阶段的就绪步骤。您不能将上一个转折点中被选择的特工选为使节。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80 text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
               <div class="text-blue-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>转折点结束，使节完全位于敌方领地且不在敌方控制内：<b>1 VP</b>；若本回合使节未受过任何伤害，改为 <b>2 VP</b>。</p>
+              <p>在第一个转折点后的每一个转折点结束时：</p>
+              <p class="pl-2 border-l-2 border-blue-500/60">· 如果己方使节完全位于敌方领地内、且不位于敌方特工的控制范围，您<b>获得 1 VP</b>。</p>
+              <p class="pl-2 border-l-2 border-blue-500/60">· 如果上述条件成立，且己方使节在本转折点中未曾失去过任何耐伤，您改为<b>获得 2 VP</b>。</p>
             </div>
           `,
           footer: "SECURITY"
@@ -663,17 +678,20 @@
         categoryName: "战术行动 · 渗透",
         type: "战术行动",
         title: "追踪敌方",
-        subtitle: "TRACK FOES",
+        subtitle: "TRACK ENEMY",
         colorScheme: "purple",
         cornerColor: "#a855f7",
         front: {
-          revealText: "第一次您通过本行动 OP 获得 VP 时揭示。",
-          actionName: "追踪状态判定",
-          actionDetail: "敌人在己方 6 寸内且为其有效目标即被追踪。己方特工须拥有隐匿命令，且不能是敌人的有效目标。",
+          revealText: "第一次您通过本行动 OP 获得 VP 时。",
+          actionName: "额外规则：追踪状态判定",
+          actionDetail: "如果一名敌方特工位于一名己方特工 6 寸内，且对该己方特工来说是有效目标，则该敌方特工正在被追踪。该己方特工必须拥有隐匿命令、对他的追踪目标来说他不能是该敌方特工的有效目标、且不能位于任何敌方特工的控制范围内。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80 text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
               <div class="text-purple-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>转折点结束：1名敌方被追踪获 <b>1 VP</b> (第4回合改为2VP)；若 2名或更多被追踪获 <b>2 VP</b>。(每回合限2VP)</p>
+              <p>在第一个转折点后的每一个转折点结束时：</p>
+              <p class="pl-2 border-l-2 border-purple-500/60">· 如果一个敌方特工被追踪，您<b>获得 1 VP</b>，或者，如果此时是第四转折点，则改为<b>获得 2 VP</b>。</p>
+              <p class="pl-2 border-l-2 border-purple-500/60">· 如果 2 个或更多敌方特工被追踪，您<b>获得 2 VP</b>。</p>
+              <p class="text-neutral-400 text-[10.5px]">（您在每个转折点中，最多通过此行动 OP 获得 2 VP）</p>
             </div>
           `,
           footer: "INFILTRATION"
@@ -687,17 +705,20 @@
         categoryName: "战术行动 · 渗透",
         type: "战术行动",
         title: "植入设备",
-        subtitle: "IMPLANT DEVICE",
+        subtitle: "PLANT DEVICES",
         colorScheme: "purple",
         cornerColor: "#a855f7",
         front: {
-          revealText: "第一次一名己方特工执行植入设备行动时揭示。",
-          actionName: "植入设备 (1 AP)",
-          actionDetail: "▶ 控制的目标标识获得己方设备指示物。<br>◆ 第 1 回合不能执行，目标已有设备不能重复植入。",
+          revealText: "第一次一名己方特工执行植入设备行动时。",
+          actionName: "任务行动：植入设备 (1 AP)",
+          actionDetail: "▶ 活跃特工控制的一个目标标识获得一枚己方设备指示物。<br>◆ 特工不能在第一转折点中执行此行动，不能在位于一名敌方特工的控制范围内时执行此行动，不能在一枚目标标识已经拥有己方设备指示物时执行此行动。",
           ruleHtml: `
             <div class="mt-2.5 pt-2 border-t border-neutral-700/80 text-[12px] sm:text-[12.5px] space-y-1.5 text-neutral-200 leading-snug">
               <div class="text-purple-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>转折点结束：对手目标有己方设备获 <b>1 VP</b>；每有一个正在被敌方争夺的其他目标有己方设备获 <b>1 VP</b>。(每回合限2VP)</p>
+              <p>在第一个转折点后的每一个转折点结束时：</p>
+              <p class="pl-2 border-l-2 border-purple-500/60">· 如果对手的目标标识拥有己方设备指示物，您<b>获得 1 VP</b>。</p>
+              <p class="pl-2 border-l-2 border-purple-500/60">· 每有一个正在被敌方特工争夺的其他目标标识拥有己方设备指示物，您<b>获得 1 VP</b>。</p>
+              <p class="text-neutral-400 text-[10.5px]">（您在每个转折点中，最多通过此行动 OP 获得 2 VP）</p>
             </div>
           `,
           footer: "INFILTRATION"
@@ -711,19 +732,19 @@
         categoryName: "战术行动 · 渗透",
         type: "战术行动",
         title: "窃取情报",
-        subtitle: "SURREPTITIOUS RETRIEVAL",
+        subtitle: "STEAL INTELLIGENCE",
         colorScheme: "purple",
         cornerColor: "#a855f7",
         front: {
-          revealText: "第一次一名敌方特工被残废时揭示。",
-          actionName: "情报遗落与拾取",
-          actionDetail: "敌方特工残废移出前在其控制内放情报标识。己方特工可执行拾取标识（每名特工可最多额外多携带1枚情报）。",
+          revealText: "第一次一名敌方特工被残废时。",
+          actionName: "额外规则：情报遗落与拾取",
+          actionDetail: "每当一名敌方特工被残废时，在他从杀戮区移除前，将一枚己方情报任务标识放置在位于该敌方特工控制范围内的位置。<br>己方特工可对己方情报任务标识执行拾取标识行动，以及对于该行动的条件规则，您可以忽略该活跃特工携带的第一个情报任务标识。也就是说，每个己方特工可携带最多 2 个情报任务标识，或者 1 个情报任务标识和 1 个其他标识。",
           ruleHtml: `
             <div class="mt-1.5 pt-1.5 border-t border-neutral-700/80 text-[11.5px] sm:text-[12px] space-y-1 text-neutral-200 leading-snug">
               <div class="text-purple-400 font-bold text-xs sm:text-sm">胜利点数 (VP)</div>
-              <p>· 转折点结束，若任意己方特工正在携带情报：<b>1 VP</b></p>
-              <p>· 战斗结束，己方每携带一枚情报任务标识：<b>1 VP</b></p>
-              <p class="text-neutral-400 italic text-[10.5px]">WCW: 消耗品/变异害虫特工不产生情报标识。</p>
+              <p>· 在第一个转折点后的每一个转折点结束时，如果任意己方特工正在携带己方情报任务标识，您<b>获得 1 VP</b>。</p>
+              <p>· 在对战结束时，己方特工每携带一枚己方情报任务标识，您<b>获得 1 VP</b>。</p>
+              <p class="text-neutral-400 italic text-[10px]">WCW专属FAQ：可消耗/消耗品构装体/变异害虫单位被残废不会产生窃取情报任务标识。</p>
             </div>
           `,
           footer: "INFILTRATION"
@@ -744,11 +765,11 @@
         badge: "后选降落区玩家获得",
         front: {
           tag: "拼骰调整 · 步骤 4",
-          actionName: "重掷先手骰",
-          actionDetail: "在第一步选择降落区时，未拥有先手权的玩家获得此卡。<br>▶ 拼骰后轮流打出，允许你<b>重投先手权骰子</b>。<br>◆ 若在此卡前使用过数值修正卡，重投将覆盖此前所有修正。",
+          actionName: "重投先手权卡",
+          actionDetail: "在步骤 1 设置战斗中，拥有先手权的玩家选择一个降落区，其对手使用另外一个降落区，并且获得重投先手权卡。<br>▶ 允许该玩家<b>重投他的先手权骰头</b>。<br>◆ 如果一名玩家在修正自己的掷骰结果后，使用了重投先手权卡，那么新的结果会覆盖已经进行过的所有修正。",
           ruleHtml: `
             <div class="mt-3.5 p-2.5 bg-orange-950/40 border border-orange-600/40 rounded text-[12px] text-orange-200 leading-snug">
-              <b>使用时机：</b>每回合拼骰阶段，败者优先决定是否使用。双方轮流打出直到连续让过。
+              <b>使用时机：</b>决定每一个转折点的先手权时（包括第一个），双方玩家拼骰（平手时不要重投）。从拼骰的败者先开始，交替使用先手权卡改变掷骰结果或让过，直到双方连续让过。
             </div>
           `,
           footer: "INITIATIVE CARD · RE-ROLL"
@@ -768,10 +789,10 @@
         front: {
           tag: "拼骰调整",
           actionName: "+1 或 -1 点数修正",
-          actionDetail: "拼骰结算时打出，将你的先手权拼骰结果<b>向上或向下修正 1 点</b>。<br>修正后的数值允许大于 6 或小于 1。",
+          actionDetail: "拼骰结算时打出，向上或向下修正该玩家的骰头结果 1 点。<br>◆ 修正后结果可以大于 6 或小于 1（例如投出 6 修正为 7，或投出 1 修正为 0）。",
           ruleHtml: `
             <div class="mt-3.5 p-2.5 bg-neutral-900 border border-neutral-700 rounded text-[12px] text-neutral-200 leading-snug">
-              由第一转折点拼骰失败的玩家拿取，可在后续转折点中使用。
+              由第一转折点拼骰失败的玩家拿取（注意由拼骰的败者获得，而非没有先手权的玩家获得），可在后续转折点中使用。
             </div>
           `,
           footer: "INITIATIVE CARD · 1ST TP"
@@ -791,10 +812,10 @@
         front: {
           tag: "拼骰调整",
           actionName: "+2 或 -2 点数修正",
-          actionDetail: "拼骰结算时打出，将你的先手权拼骰结果<b>向上或向下修正 2 点</b>。<br>修正后的数值允许大于 6 或小于 1。",
+          actionDetail: "拼骰结算时打出，向上或向下修正该玩家的骰头结果 2 点。<br>◆ 修正后结果可以大于 6 或小于 1（例如投出 5 修正为 7 或 3）。",
           ruleHtml: `
             <div class="mt-3.5 p-2.5 bg-neutral-900 border border-neutral-700 rounded text-[12px] text-neutral-200 leading-snug">
-              由第二转折点拼骰失败的玩家拿取，可在后续转折点中使用。
+              由第二转折点拼骰失败的玩家拿取（注意由拼骰的败者获得，而非没有先手权的玩家获得），可在后续转折点中使用。
             </div>
           `,
           footer: "INITIATIVE CARD · 2ND TP"
@@ -814,10 +835,10 @@
         front: {
           tag: "拼骰调整",
           actionName: "+3 或 -3 点数修正",
-          actionDetail: "拼骰结算时打出，将你的先手权拼骰结果<b>向上或向下修正 3 点</b>。<br>修正后的数值允许大于 6 或小于 1。",
+          actionDetail: "拼骰结算时打出，向上或向下修正该玩家的骰头结果 3 点。<br>◆ 修正后结果可以大于 6 或小于 1（例如投出 4 修正为 7 或 1）。",
           ruleHtml: `
             <div class="mt-3.5 p-2.5 bg-neutral-900 border border-neutral-700 rounded text-[12px] text-neutral-200 leading-snug">
-              由第三转折点拼骰失败的玩家拿取，可在第四转折点中使用。
+              由第三转折点拼骰失败的玩家拿取（注意由拼骰的败者获得，而非没有先手权的玩家获得），可在第四转折点中使用。第四转折点拼骰失败者不再获得先手权卡。
             </div>
           `,
           footer: "INITIATIVE CARD · 3RD TP"
